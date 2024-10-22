@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    color: aliceblue;
+    flex-direction: row;
+    flex-grow: 5;
+    list-style-type:none ;
+    text-decoration: none;
+    
+}
+li{
+    flex-grow: 1;
+    text-decoration: none;
+    text-underline: none;
+}

@@ -1,0 +1,160 @@
+
+.productItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+  border: 10px solid white;
+}
+
+.productItem img {
+  flex: 1;
+  max-width: 400px;
+  height: 300px;
+  object-fit: contain;
+  margin-right: 70px;
+  margin-top: 20px;
+  background-color:whitesmoke;
+  border: 5px solid rgb(20, 20, 20);
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+#descrption {
+  flex: 2;
+  max-width: 600px;
+}
+
+#descrption h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#descrption h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#descrption p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#descrption h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#add {
+  color: rgb(20, 20, 18);
+  background-color: rgb(215, 144, 77);
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  margin-top: 36%;
+  margin-right: 35%;
+}
+
+button:hover {
+  background-color: #bf9494;
+  border: solid;
+}
+
+/* Media Queries added  here */
+@media (max-width: 1024px) {
+  .productItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productItem img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #descrption {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #add {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productItem {
+    padding: 10px;
+  }
+
+  .productItem img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  #descrption h4 {
+    font-size: 1rem;
+  }
+
+  #descrption h1 {
+    font-size: 1.5rem;
+  }
+
+  #descrption p {
+    font-size: 0.9rem;
+  }
+
+  #descrption h3 {
+    font-size: 1.2rem;
+  }
+
+  #add {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .productItem {
+    padding: 5px;
+  }
+
+  .productItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #descrption h4 {
+    font-size: 0.9rem;
+  }
+
+  #descrption h1 {
+    font-size: 1.2rem;
+  }
+
+  #descrption p {
+    font-size: 0.8rem;
+  }
+
+  #descrption h3 {
+    font-size: 1rem;
+  }
+
+  #add {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+}
